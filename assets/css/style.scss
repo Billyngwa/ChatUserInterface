@@ -1,0 +1,17 @@
+@import './settings/variables';
+@import './settings/mixins';
+@import './settings/window-reset';
+@import './desktop/chat-pannel';
+@import './desktop/contacts';
+@import './desktop/profile';
+@media (max-width:750px){
+    @import './tablet/chat-pannel';
+    @import './tablet/contacts';
+    @import './tablet/profile';
+}
+@media (max-width:500px){
+    @import './mobile/chat-pannel';
+    @import './mobile/contacts';
+    @import './mobile/profile';
+}
+

@@ -1,39 +1,200 @@
-=-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login</title>
-    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+    <script src="https://kit.fontawesome.com/a14b3ad818.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Chat User Interface</title>
 </head>
 <body>
-    <div class="face">
-     <p id="spec">facebook</p>
-     <p>facebook helps you connect and share <br>with the people in your life</p>
-    </div> 
-     <form action="">
-         <fieldset id="log">
-             <div class="email">
-             <input type="email" name="email" required="required"
-              placeholder="Email address or phone number"/>
-              </div>
-              <br>
-              <div class="pass">
-              <input type="password" name="password" required="required"
-              placeholder="password"/>
-              </div>
-              <br>
-              <div class="login">
-              <input type="submit" value="log in"/>
-              </div>
-              <br>
-              <p> <a href="password.html"> Forgotten Password?</a></p>
-              <hr><br>
-              <div>
-                  <button class="button">Create New Account</button>
-              </div>
-         </fieldset>
-     </form>
+    <main>
+        <section class="chat-ui available-chat">
+            <header>
+                <div class="queried-profile">
+                    <div class="searched-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <div class="username-and-description">
+                            <h1 class="username">Gravid Cristofer</h1>
+                            <p class="user-description">Senior Developer</p>
+                        </div>
+                    </div>
+                    <span></span>
+                </div>
+                <div class="query-profile">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" name="freind-searcher" id="search-profile" placeholder="Search friends"/>
+                </div>
+            </header>
+            <div class="available-chats">
+                <div class="chat">
+                    <div class="chat-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <div class="username-and-last-message">
+                            <h1 class="username">Lina Roy</h1>
+                            <p class="last-message">The ok. He's meeting with client tomorrow</p>
+                        </div>
+                    </div>
+                    <div class="flags">
+                        <p class="time-flag">10:34 Am</p>
+                        <p class="message-flag">1</p>
+                        <p class="read-flag"></p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <div class="username-and-last-message">
+                            <h1 class="username">Brad Frost</h1>
+                            <p class="last-message">Nice to meet you</p>
+                        </div>
+                    </div>
+                    <div class="flags">
+                        <p class="time-flag">10:29 Am</p>
+                        <p class="message-flag"></p>
+                        <p class="read-flag"></p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <div class="username-and-last-message">
+                            <h1 class="username">Paul Irish</h1>
+                            <p class="last-message">Thats great then start working from tomorrow</p>
+                        </div>
+                    </div>
+                    <div class="flags">
+                        <p class="time-flag">9:34 Am</p>
+                        <p class="message-flag">1</p>
+                        <p class="read-flag"></p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <div class="username-and-last-message">
+                            <h1 class="username">Jessica Giloy</h1>
+                            <p class="last-message">That's source code</p>
+                        </div>
+                    </div>
+                    <div class="flags">
+                        <p class="time-flag">08:50 Am</p>
+                        <p class="message-flag"></p>
+                        <p class="read-flag"></p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <div class="username-and-last-message">
+                            <h1 class="username">John Doe</h1>
+                            <p class="last-message">Hi sir, the second component will be completed today</p>
+                        </div>
+                    </div>
+                    <div class="flags">
+                        <p class="time-flag">08:34 Am</p>
+                        <p class="message-flag"></p>
+                        <p class="read-flag"></p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chat-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <div class="username-and-last-message">
+                            <h1 class="username">Eric Peterson</h1>
+                            <p class="last-message">First of all meet with the company CEO and ICA</p>
+                        </div>
+                    </div>
+                    <div class="flags">
+                        <p class="time-flag">02:12 Am</p>
+                        <p class="message-flag"></p>
+                        <p class="read-flag"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chat-ui chat-pannel">
+            <header>
+                <div class="current-chat">
+                    <div class="user-profile">
+                        <div class="display-photo">
+                            <img src="" alt="Display photo">
+                        </div>
+                        <p class="username">Diane Vanhorn</p>
+                        <p class="online-flag"></p>
+                    </div>
+                    <div class="likes-notification">
+                        <button class="search-message"></button>
+                        <button class="like-button"></button>
+                        <button class="notification-button"></button>
+                    </div>
+                </div>
+            </header>
+            <div class="chat-box">
+                <div class="yesterdays-chat"></div>
+                <div class="todays-chat"></div>
+                <div class="text-area">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="chat-ui user-profile">
+            <header>
+                <div class="query-profile">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" name="friend-searcher" id="search-profile" placeholder="Search people"/>
+                </div>
+                <div class="user-profile">
+                    <div class="display-photo">
+                        <img src="" alt="Display photo">
+                    </div>
+                    <div class="username-and-description">
+                        <h1 class="username">Diane Vanhorn</h1>
+                        <p class="user-description">junior Developer</p>
+                    </div>
+                    <div class="vidcall-and-chat">
+                        <div class="chat-icon">
+                            <p><i></i></p>
+                            <p class="chat">chat</p>
+                        </div>
+                        <div class="vidcall-icon">
+                            <p><i></i></p>
+                            <p class="vidcall">Video call</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="friends-and-favorites">
+                <p class="friends">View friends</p>
+                <p class="favorites">Add to favorites</p>
+            </div>
+            <div class="media-links-docs">
+                <h3>Attachments</h3>
+                <div class="attachments">
+                    <div class="attachment"><span>Pdf</span></div>
+                    <div class="attachment"><span>video</span></div>
+                    <div class="attachment"><span>mp3</span></div>
+                    <div class="attachment"><span>image</span></div>
+                </div>
+                <button class="view-all" type="button">View all</button>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/javascript/index.js"></script>
 </body>
 </html>
