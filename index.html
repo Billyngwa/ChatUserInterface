@@ -15,14 +15,14 @@
                 <div class="queried-profile">
                     <div class="searched-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/gravis.png" alt="Display photo">
                         </div>
                         <div class="username-and-description">
                             <h1 class="username">Gravid Cristofer</h1>
                             <p class="user-description">Senior Developer</p>
                         </div>
                     </div>
-                    <span></span>
+                    <span class="edit"><i class="fa-solid fa-pen"></i></span>
                 </div>
                 <div class="query-profile">
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -33,7 +33,7 @@
                 <div class="chat">
                     <div class="chat-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/lina-roy.png" alt="Display photo">
                         </div>
                         <div class="username-and-last-message">
                             <h1 class="username">Lina Roy</h1>
@@ -49,7 +49,7 @@
                 <div class="chat">
                     <div class="chat-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/brad-frost.png" alt="Display photo">
                         </div>
                         <div class="username-and-last-message">
                             <h1 class="username">Brad Frost</h1>
@@ -65,7 +65,7 @@
                 <div class="chat">
                     <div class="chat-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/paul-irish.png" alt="Display photo">
                         </div>
                         <div class="username-and-last-message">
                             <h1 class="username">Paul Irish</h1>
@@ -81,7 +81,7 @@
                 <div class="chat">
                     <div class="chat-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/jessica-giloy.png" alt="Display photo">
                         </div>
                         <div class="username-and-last-message">
                             <h1 class="username">Jessica Giloy</h1>
@@ -97,7 +97,7 @@
                 <div class="chat">
                     <div class="chat-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/john-doe.png" alt="Display photo">
                         </div>
                         <div class="username-and-last-message">
                             <h1 class="username">John Doe</h1>
@@ -113,7 +113,7 @@
                 <div class="chat">
                     <div class="chat-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/eric-peterson.png" alt="Display photo">
                         </div>
                         <div class="username-and-last-message">
                             <h1 class="username">Eric Peterson</h1>
@@ -133,23 +133,90 @@
                 <div class="current-chat">
                     <div class="user-profile">
                         <div class="display-photo">
-                            <img src="" alt="Display photo">
+                            <img src="./images/diane-vanhord.png" alt="Display photo">
                         </div>
                         <p class="username">Diane Vanhorn</p>
                         <p class="online-flag"></p>
                     </div>
                     <div class="likes-notification">
-                        <button class="search-message"></button>
-                        <button class="like-button"></button>
-                        <button class="notification-button"></button>
+                        <button class="search-message"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="like-button"><i class="fa-regular fa-heart"></i></button>
+                        <button class="notification-button"><i class="fa-solid fa-bell"></i></button>
                     </div>
                 </div>
             </header>
             <div class="chat-box">
-                <div class="yesterdays-chat"></div>
-                <div class="todays-chat"></div>
-                <div class="text-area">
-                    
+                <div class="yesterdays-chat">
+                    <div class="receiver">
+                        <div class="dp-and-message">
+                            <div class="dp">
+                                <img src="./images/diane-vanhord.png" alt="">
+                            </div>
+                            <p class="message">That's great</p>
+                        </div>
+                    </div>
+                    <div class="sender">
+                        <div class="dp-and-message">
+                            <p class="message">I am refer to the project structure and found some mistakes</p>
+                            <p class="message">There are some bug in that project</p>
+                            <div class="dp">
+                                <img src="./images/sender.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receiver">
+                        <div class="dp-and-message">
+                            <div class="dp">
+                                <img src="./images/diane-vanhord.png" alt="">
+                            </div>
+                            <p class="message">I see that project</p>
+                            <p class="message">Yes there are many bugs in that project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="todays-chat">
+                    <div class="receiver">
+                        <div class="dp-and-message">
+                            <div class="dp">
+                                <img src="./images/diane-vanhord.png" alt="">
+                            </div>
+                            <p class="message">Ok</p>
+                        </div>
+                    </div>
+                    <div class="sender">
+                        <div class="dp-and-message">
+                            <p class="message">Can you send me the project</p>
+                            <div class="dp">
+                                <img src="./images/sender.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receiver">
+                        <div class="dp-and-message">
+                            <div class="dp">
+                                <img src="./images/diane-vanhord.png" alt="">
+                            </div>
+                            <p class="message">Hello I'm fine and you?</p>
+                        </div>
+                    </div>
+                    <div class="sender">
+                        <div class="dp-and-message">
+                            <p class="message">Hello sir, How are you?</p>
+                            <div class="dp">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-tools">
+                    <button class="voicemail" type="button"><i class="fa-solid fa-microphone"></i></button>
+                    <textarea name="message" id="sender-message" cols="30" rows="10">Write something</textarea>
+                    <div class="camera-emoji-doc">
+                        <button class="attach-file" type="button"><i class="fa-solid fa-paperclip"></i></button>
+                        <button class="camera" type="button"><i class="fa-solid fa-camera"></i></button>
+                        <button class="emoji" type="button"><i class="fa-solid fa-face-smile"></i></button>
+                    </div>
+                    <button class="send" type="button"><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
             </div>
         </section>
@@ -161,7 +228,7 @@
                 </div>
                 <div class="user-profile">
                     <div class="display-photo">
-                        <img src="" alt="Display photo">
+                        <img src="./images/diane-vanhord.png" alt="Display photo">
                     </div>
                     <div class="username-and-description">
                         <h1 class="username">Diane Vanhorn</h1>
@@ -169,19 +236,19 @@
                     </div>
                     <div class="vidcall-and-chat">
                         <div class="chat-icon">
-                            <p><i></i></p>
+                            <p><i class="fa-solid fa-comment"></i></p>
                             <p class="chat">chat</p>
                         </div>
                         <div class="vidcall-icon">
-                            <p><i></i></p>
+                            <p><i class="fa-solid fa-video"></i></p>
                             <p class="vidcall">Video call</p>
                         </div>
                     </div>
                 </div>
             </header>
             <div class="friends-and-favorites">
-                <p class="friends">View friends</p>
-                <p class="favorites">Add to favorites</p>
+                <p class="friends">f007View friends</p>
+                <p class="favorites">f004Add to favorites</p>
             </div>
             <div class="media-links-docs">
                 <h3>Attachments</h3>
