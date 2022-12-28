@@ -1,0 +1,164 @@
+main{
+    section.user-profile{
+        header{
+            div.query-profile{
+                @include container(90%,5%);
+                background-color: white;
+                border-radius: 20px;
+                padding: 10px;
+                margin-top: 10px;
+                span{
+                    margin-left: 2px;
+                    i{
+                        color:rgba(0, 0, 0, 0.199)
+                    }
+                }
+                input[type="search"]{
+                    background-color: transparent;
+                    @include input-button-style;
+                    // width: 80%;
+                    @include container(80%, 2%);
+                    font-size: 16px;
+                    font-family: $font-family;
+                    color:rgba(0, 0, 0, 0.363);
+                    &::placeholder{
+                        
+                        color:rgba(0, 0, 0, 0.349);
+                    }
+                    
+                }
+            }
+            div.user-profile{
+                div.central-image{
+                    @include container(30%, 30%);
+                    div.display-photo{
+                        padding: 20px 0px 0px 10px;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                div.username-and-description{
+                    @include container(40%, 25%);
+                    padding: 15px 0px 10px 0px;
+                    h1.username{
+                        font-family: $font-family;
+                        font-weight: 500;
+                        color: black;
+                    }
+                    p.user-description{
+                        font-family: $font-family;
+                        font-weight:300;
+                        color: black;
+                        padding: 0px 0px 0px 20px;
+                    }
+                }
+                div.vidcall-and-chat{
+                    @include display-element-flex(center,space-between);
+                    @include container(40%,30%);
+                    div.chat-icon{
+                        width: 40%;
+                        border-right: 1px solid ;
+                        .icon{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background-color:  rgba(0, 0, 255, 0.164);
+                            i{
+                                padding: 15px;
+                                color: rgba(0, 0, 255, 0.842);
+                                font-size: 20px;
+                            }
+                        }
+                        p.chat{
+                            font-family: $font-family;
+                            font-weight:300;
+                            color: black;
+                            padding: 5px 0px 0px 10px;
+                        }
+                    }
+                    div.vidcall-icon{
+                        width: 40%;
+                        .icon{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background-color: rgba(0, 0, 255, 0.164);
+                            i{
+                                padding: 15px;
+                                color: rgba(0, 0, 255, 0.842);
+                                font-size: 20px;
+                            }
+                        }
+                        p.vidcall{
+                            font-family: $font-family;
+                            font-weight:300;
+                            color: black;
+                            padding: 5px 0px 0px 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .friends-and-favorites{
+            padding-left: 40px;
+         
+            .friends{
+                font-family: $font-family;
+                font-weight:300;
+                color: black;
+                font-size: 14px;
+                padding-top: 10px;
+                span{
+                    margin-left: 10px;
+                }
+            }
+            .favorites{
+              @extend .friends;
+            }
+        }
+        .media-links-docs{
+            button.view-all{
+                border-radius: 50px;
+                border: 1px solid $blue-color;
+                padding: 5px;
+                color: $blue-color;
+                background-color: white;
+                margin-left: 45%;
+                margin-top:15px ;
+            }
+            h3{
+                font-family: $font-family;
+                font-weight:500;
+                color: black;
+                padding: 15px 0px 15px 40px
+            }
+            .attachments{
+                @include display-element-flex(center,null);
+                @include container(80%,10%);
+                gap:10px;
+                .attachment{
+                    width: 20%;
+                    background-color: rgba(0, 0, 255, 0.164);;
+                    padding: 20px 10px 20px 10px ;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    span{
+                        font-family: $font-family;
+                        font-weight:400;
+                        color: $blue-color;
+                        font-size: 13px; 
+                        @include container(20%,30%);
+                        // padding: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
