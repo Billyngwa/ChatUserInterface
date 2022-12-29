@@ -1,12 +1,32 @@
 main{
     section.user-profile{
+        // position: relative;
+        // left: 100%;
         header{
+            .cross{
+                margin-left: 10px;
+                cursor: pointer;
+                .first{
+                    width: 25px;
+                    height: 3px;
+                    background-color: rgba(0, 0, 0, 0.199);
+                    margin-top: 7px;
+                    transform: rotate(47deg) translate(14px, 5px);
+                }
+                .second{
+                    width: 25px;
+                    height: 3px;
+                    margin-top: 7px;
+                    background-color:rgba(0, 0, 0, 0.199);;
+                    transform: rotate(-45deg) translate(2px, 7px);
+                }
+            }
             div.query-profile{
                 @include container(90%,5%);
                 background-color: white;
                 border-radius: 20px;
                 padding: 10px;
-                margin-top: 10px;
+                margin-top: 25px;
                 span{
                     margin-left: 2px;
                     i{

@@ -1,11 +1,13 @@
 body{
     main{
         @include display-element-flex(center,space-between);
+        // background-color: whitesmoke;
         section.chat-ui{
-            width: 33%;
             background-color: $ui-background;
+            width: 33%;
         }
         section.available-chat{
+            // width: 50%;
             padding-top: 20px;
             header{
                 div.queried-profile{

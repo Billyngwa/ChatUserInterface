@@ -9,20 +9,25 @@ button {
   cursor: pointer;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main section.chat-pannel {
-  background-color: white !important;
+  background-color: white;
 }
 main section.chat-pannel header .current-chat {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin-left: 5%;
+  width: 98%;
+  margin-left: 1%;
 }
 main section.chat-pannel header .current-chat div.user-profile {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 main section.chat-pannel header .current-chat div.user-profile div.display-photo {
   width: 50px;
@@ -56,7 +61,8 @@ main section.chat-pannel header .current-chat div.likes-notification button i {
 }
 main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message, main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message, main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp, main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message .dp, main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message .dp, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message .dp {
   width: 20px;
@@ -75,15 +81,36 @@ main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message p.mess
   background-color: whitesmoke;
   padding: 7px;
   border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: white;
 }
+main section.chat-pannel div.chat-box .old-chat .sender, main section.chat-pannel div.chat-box div.todays-chat .sender {
+  float: right;
+}
+main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
+  display: flex;
+  align-items: flex-end;
+}
+main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message div.double-messages p.message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message div.double-messages p.message {
+  background-color: rgb(28, 128, 241);
+}
+main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message p.message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message p.message {
+  color: black;
+}
+main section.chat-pannel div.chat-box div.todays-chat div.sender .dp-and-message p.message {
+  background-color: rgb(28, 128, 241);
+  color: black;
+}
+
 body main {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 body main section.chat-ui {
-  width: 33%;
   background-color: whitesmoke;
+  width: 33%;
 }
 body main section.available-chat {
   padding-top: 20px;
@@ -220,13 +247,31 @@ body main section.available-chat div.available-chats div.chat div.flags p.read-f
   font-size: 13px;
 }
 
+main section.user-profile header .cross {
+  margin-left: 10px;
+  cursor: pointer;
+}
+main section.user-profile header .cross .first {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.199);
+  margin-top: 7px;
+  transform: rotate(47deg) translate(14px, 5px);
+}
+main section.user-profile header .cross .second {
+  width: 25px;
+  height: 3px;
+  margin-top: 7px;
+  background-color: rgba(0, 0, 0, 0.199);
+  transform: rotate(-45deg) translate(2px, 7px);
+}
 main section.user-profile header div.query-profile {
   width: 90%;
   margin-left: 5%;
   background-color: white;
   border-radius: 20px;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 main section.user-profile header div.query-profile span {
   margin-left: 2px;

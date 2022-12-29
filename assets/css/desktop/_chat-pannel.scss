@@ -1,13 +1,16 @@
 main{
     section.chat-pannel{
-        background-color: white!important;
+        background-color: white;
+        // margin-left: 1%;
+        // width: 70%;
         header{
             .current-chat{
                 @include display-element-flex(center,space-between);
-                @include container(90%,5%);
+                @include container(98%,1%);
                 div.user-profile{
                     @include display-element-flex(center,null); 
                     gap: 10px;
+                    cursor: pointer;
                     div.display-photo{
                         width: 50px;
                         height: 50px;
@@ -46,7 +49,8 @@ main{
             .old-chat{
                 .receiver{
                     .dp-and-message{
-                        @include display-element-flex(center,null);
+                        @include display-element-flex(flex-start,null);
+                        flex-direction: column;
                         .dp{
                             width: 20px;
                             height: 20px;
@@ -64,15 +68,43 @@ main{
                             background-color: whitesmoke;
                             padding: 7px;
                             border-radius: 10px;
+                            margin-top: 2px;
+                            margin-bottom: 2px;
+                            background-color: white;
                         }
                     }
                 }
                 .sender{
                     @extend .receiver;
+          
+                    float: right;
+                    .dp-and-message{
+                        @include display-element-flex(flex-end,null);
+                        div.double-messages{
+                            p.message{
+                                background-color: $blue-color;
+                            }
+                        }
+                    }
                 }
             }
             div.todays-chat{
                 @extend .old-chat;
+                .receiver{
+                    .dp-and-message{
+                        p.message{
+                            color: black;
+                        }
+                    }
+                }
+                div.sender{
+                    .dp-and-message{
+                        p.message{
+                            background-color: $blue-color;
+                            color: black;
+                        }
+                    }
+                }
             }
         }   
     }
