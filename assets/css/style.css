@@ -104,6 +104,59 @@ main section.chat-pannel div.chat-box div.todays-chat div.sender .dp-and-message
   background-color: rgb(28, 128, 241);
   color: black;
 }
+main section.chat-pannel div.chat-box .writer {
+  display: flex;
+  align-items: center;
+}
+main section.chat-pannel div.chat-box .writer .message-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78%;
+  margin-left: 2%;
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm button.voicemail {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgba(27, 20, 20, 0.644);
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea {
+  background-color: whitesmoke;
+  height: 40px;
+  padding: 8px 0px 0px 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-left: 3px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.363);
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.349);
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.349);
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::placeholder {
+  color: rgba(0, 0, 0, 0.349);
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm .camera-emoji-doc button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+main section.chat-pannel div.chat-box .writer .message-tools div.vm .camera-emoji-doc button i {
+  color: rgba(27, 20, 20, 0.644);
+}
 
 body main {
   display: flex;

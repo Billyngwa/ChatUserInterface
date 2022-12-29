@@ -106,6 +106,52 @@ main{
                     }
                 }
             }
+            .writer{
+                @include display-element-flex(center,null);
+                .message-tools{
+                    @include display-element-flex(center,space-between);
+                    @include container(78%,2%);
+                    div.vm{
+                        width: 80%;
+                        @include display-element-flex(center,null);
+                        button.voicemail{
+                            @include input-button-style;
+                            background-color: transparent;
+                            font-size: 20px;
+                            color: rgba(27, 20, 20, 0.644);
+                        }
+                        textarea{
+                            background-color: whitesmoke;
+                            height: 40px;
+                            padding: 8px 0px 0px 10px;
+                            border-radius: 30px;
+                            @include input-button-style;
+                            width: 100%;
+                            margin-left: 3px;
+                            // @include container(90%, 2%);
+                            font-size: 16px;
+                            font-family: $font-family;
+                            color:rgba(0, 0, 0, 0.363);
+                            &::placeholder{
+                                
+                                color:rgba(0, 0, 0, 0.349);
+                            }
+                            
+                        }
+                        .camera-emoji-doc{
+                           
+                            button{
+                                @include input-button-style;
+                                background-color: transparent;
+                                i{
+                                    color:rgba(27, 20, 20, 0.644);;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
         }   
     }
 }
