@@ -1,8 +1,8 @@
 main{
     section.chat-pannel{
         background-color: white;
-        // margin-left: 1%;
-        // width: 70%;
+        margin-left: 1%;
+        width: 70%;
         header{
             .current-chat{
                 @include display-element-flex(center,space-between);
