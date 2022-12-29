@@ -1,64 +1,27 @@
 main{
-    section.chat-pannel{
-        background-color: white;
-        margin-left: 1%;
+    section.user-profile-and-chat-pannel{
+        @include display-element-flex(center,space-between);
         width: 70%;
-
-        
-        &.view{
-            width:33%;
-        }
-        header{
-            .current-chat{
-                @include display-element-flex(center,space-between);
-                @include container(98%,1%);
-                div.user-profile{
-                    @include display-element-flex(center,null); 
-                    gap: 10px;
-                    cursor: pointer;
-                    div.display-photo{
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 50%;
-                        }
-                    }
-                    p.username{
-                        font-family: $font-family;
-                        font-weight: 500;
-                        color: black;
-                    }
-                    p.online-flag{
-                        width: 10px;
-                        height: 10px;
-                        background-color: green;
-                        border-radius: 50%;
-                    }
-                }
-                div.likes-notification{
-                    button{
-                        @include input-button-style;
-                        background-color: transparent;
-                        i{
-                            font-size: 20px;
-                            color: rgba(0, 0, 0, 0.342);
-                        }
-                    }
-                }
+        section.chat-pannel{
+            background-color: white;
+            // margin-left: 1%;
+            // width: %;
+            width: 100%;
+            
+            &.view{
+                width:50%;
             }
-        }
-        div.chat-box{
-            .old-chat{
-                .receiver{
-                    .dp-and-message{
-                        @include display-element-flex(flex-start,null);
-                        flex-direction: column;
-                        .dp{
-                            width: 20px;
-                            height: 20px;
+            header{
+                .current-chat{
+                    @include display-element-flex(center,space-between);
+                    @include container(98%,1%);
+                    div.user-profile{
+                        @include display-element-flex(center,null); 
+                        gap: 10px;
+                        cursor: pointer;
+                        div.display-photo{
+                            width: 50px;
+                            height: 50px;
                             border-radius: 50%;
                             img{
                                 width: 100%;
@@ -66,85 +29,126 @@ main{
                                 border-radius: 50%;
                             }
                         }
+                        p.username{
+                            font-family: $font-family;
+                            font-weight: 500;
+                            color: black;
+                        }
+                        p.online-flag{
+                            width: 10px;
+                            height: 10px;
+                            background-color: green;
+                            border-radius: 50%;
+                        }
                     }
-                }
-                .sender{
-                    @extend .receiver;
-          
-                    float: right;
-                    .dp-and-message{
-                        @include display-element-flex(flex-end,null);
-                        div.double-messages{
-                            p.message{
-                                background-color: $blue-color;
+                    div.likes-notification{
+                        button{
+                            @include input-button-style;
+                            background-color: transparent;
+                            i{
+                                font-size: 20px;
+                                color: rgba(0, 0, 0, 0.342);
                             }
                         }
                     }
                 }
             }
-            div.todays-chat{
-                @extend .old-chat;
-            }
-            .writer{
-                margin-top: 100px;
-                button.send{
-                    @include input-button-style;
-                    background-color: $blue-color;
-                    color: white;
-                    font-size: 15px;
-                    padding: 5px;
-                    margin-left: 5px;
-                    transform: rotate(45deg);
-                    border-radius: 50%;
-                }
-                @include display-element-flex(center,null);
-                .message-tools{
-                    @include display-element-flex(center,space-between);
-                    @include container(78%,2%);
-                    div.vm{
-                        width: 80%;
-                        @include display-element-flex(center,null);
-                        button.voicemail{
-                            @include input-button-style;
-                            background-color: transparent;
-                            font-size: 20px;
-                            color: rgba(27, 20, 20, 0.644);
+            div.chat-box{
+                .old-chat{
+                    .receiver{
+                        .dp-and-message{
+                            @include display-element-flex(flex-start,null);
+                            flex-direction: column;
+                            .dp{
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                }
+                            }
                         }
-                        textarea{
-                            background-color: whitesmoke;
-                            height: 40px;
-                            padding: 8px 0px 0px 10px;
-                            border-radius: 30px;
-                            @include input-button-style;
-                            width: 100%;
-                            resize: none;
-                            margin-left: 3px;
-                            // @include container(90%, 2%);
-                            font-size: 16px;
-                            font-family: $font-family;
-                            color:rgba(0, 0, 0, 0.363);
-                            &::placeholder{
+                    }
+                    .sender{
+                        @extend .receiver;
+              
+                        float: right;
+                        .dp-and-message{
+                            @include display-element-flex(flex-end,null);
+                            div.double-messages{
+                                p.message{
+                                    background-color: $blue-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                div.todays-chat{
+                    @extend .old-chat;
+                }
+                .writer{
+                    margin-top: 100px;
+                    button.send{
+                        @include input-button-style;
+                        background-color: $blue-color;
+                        color: white;
+                        font-size: 15px;
+                        padding: 5px;
+                        margin-left: 5px;
+                        transform: rotate(45deg);
+                        border-radius: 50%;
+                    }
+                    @include display-element-flex(center,null);
+                    .message-tools{
+                        @include display-element-flex(center,space-between);
+                        @include container(78%,2%);
+                        div.vm{
+                            width: 80%;
+                            @include display-element-flex(center,null);
+                            button.voicemail{
+                                @include input-button-style;
+                                background-color: transparent;
+                                font-size: 20px;
+                                color: rgba(27, 20, 20, 0.644);
+                            }
+                            textarea{
+                                background-color: whitesmoke;
+                                height: 40px;
+                                padding: 8px 0px 0px 10px;
+                                border-radius: 30px;
+                                @include input-button-style;
+                                width: 100%;
+                                resize: none;
+                                margin-left: 3px;
+                                // @include container(90%, 2%);
+                                font-size: 16px;
+                                font-family: $font-family;
+                                color:rgba(0, 0, 0, 0.363);
+                                &::placeholder{
+                                    
+                                    color:rgba(0, 0, 0, 0.349);
+                                }
                                 
-                                color:rgba(0, 0, 0, 0.349);
+                            }
+                        }
+                        .camera-emoji-doc{
+                               
+                            button{
+                                @include input-button-style;
+                                background-color: transparent!important;
+                                i{
+                                    padding-right: 5px;
+                                    font-size: 16px;
+                                    color:rgba(27, 20, 20, 0.644)!important;
+                                }
                             }
                             
                         }
                     }
-                    .camera-emoji-doc{
-                           
-                        button{
-                            @include input-button-style;
-                            background-color: transparent!important;
-                            i{
-                                padding-right: 5px;
-                                font-size: 16px;
-                                color:rgba(27, 20, 20, 0.644)!important;
-                            }
-                        }
-                        
-                    }
                 }
-            }
-        }   
+            }   
+        }
     }
 }

@@ -11,8 +11,8 @@
     @import './tablet/profile';
 }
 @media (max-width:500px){
-    @import './mobile/chat-pannel';
     @import './mobile/contacts';
+    @import './mobile/chat-pannel';
     @import './mobile/profile';
 }
 

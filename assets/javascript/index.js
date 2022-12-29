@@ -12,6 +12,7 @@ let userProfile = document.querySelector('section.user-profile');
 let availableContact = document.querySelector('.available-chat');
 displayProfile.addEventListener('click', event => {
     chatPannel.classList.add('view');
+    // chatPannel.classList.remove('chat-pannel');
     availableContact.classList.add('view');
     userProfile.classList.add('view');
 });

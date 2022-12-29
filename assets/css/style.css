@@ -35,88 +35,93 @@ p.receivers-message {
   margin-bottom: 2px;
 }
 
-main section.chat-pannel {
-  background-color: white;
-  margin-left: 1%;
+main section.user-profile-and-chat-pannel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 70%;
 }
-main section.chat-pannel.view {
-  width: 33%;
+main section.user-profile-and-chat-pannel section.chat-pannel {
+  background-color: white;
+  width: 100%;
 }
-main section.chat-pannel header .current-chat {
+main section.user-profile-and-chat-pannel section.chat-pannel.view {
+  width: 50%;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 98%;
   margin-left: 1%;
 }
-main section.chat-pannel header .current-chat div.user-profile {
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
-main section.chat-pannel header .current-chat div.user-profile div.display-photo {
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile div.display-photo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-main section.chat-pannel header .current-chat div.user-profile div.display-photo img {
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile div.display-photo img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-main section.chat-pannel header .current-chat div.user-profile p.username, body main section.chat-pannel header .current-chat div.user-profile section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message section.chat-pannel header .current-chat div.user-profile p.last-message, body main section.chat-pannel section.available-chat header .current-chat div.user-profile div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.available-chat section.chat-pannel header .current-chat div.user-profile div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.chat-pannel section.available-chat header div.queried-profile div.searched-profile div.username-and-description .current-chat div.user-profile p.user-description, body main section.available-chat section.chat-pannel header div.queried-profile div.searched-profile div.username-and-description .current-chat div.user-profile p.user-description {
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile p.username, body main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile p.last-message, body main section.user-profile-and-chat-pannel section.chat-pannel section.available-chat header .current-chat div.user-profile div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.available-chat section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.user-profile-and-chat-pannel section.chat-pannel section.available-chat header div.queried-profile div.searched-profile div.username-and-description .current-chat div.user-profile p.user-description, body main section.available-chat section.user-profile-and-chat-pannel section.chat-pannel header div.queried-profile div.searched-profile div.username-and-description .current-chat div.user-profile p.user-description {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: black;
 }
-main section.chat-pannel header .current-chat div.user-profile p.online-flag {
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile p.online-flag {
   width: 10px;
   height: 10px;
   background-color: green;
   border-radius: 50%;
 }
-main section.chat-pannel header .current-chat div.likes-notification button {
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.likes-notification button {
   border: none;
   outline: none;
   background-color: transparent;
 }
-main section.chat-pannel header .current-chat div.likes-notification button i {
+main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.likes-notification button i {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.342);
 }
-main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message, main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message, main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp, main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message .dp, main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message .dp, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message .dp {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message .dp, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message .dp, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message .dp {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
-main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp img, main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message .dp img, main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message .dp img, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message .dp img {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp img, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message .dp img, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message .dp img, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message .dp img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-main section.chat-pannel div.chat-box .old-chat .sender, main section.chat-pannel div.chat-box div.todays-chat .sender {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender {
   float: right;
 }
-main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
   display: flex;
   align-items: flex-end;
 }
-main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message div.double-messages p.message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message div.double-messages p.message {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message div.double-messages p.message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message div.double-messages p.message {
   background-color: rgb(28, 128, 241);
 }
-main section.chat-pannel div.chat-box .writer {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer {
   margin-top: 100px;
   display: flex;
   align-items: center;
 }
-main section.chat-pannel div.chat-box .writer button.send {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer button.send {
   border: none;
   outline: none;
   background-color: rgb(28, 128, 241);
@@ -127,26 +132,26 @@ main section.chat-pannel div.chat-box .writer button.send {
   transform: rotate(45deg);
   border-radius: 50%;
 }
-main section.chat-pannel div.chat-box .writer .message-tools {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 78%;
   margin-left: 2%;
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm {
   width: 80%;
   display: flex;
   align-items: center;
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm button.voicemail {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm button.voicemail {
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 20px;
   color: rgba(27, 20, 20, 0.644);
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea {
   background-color: whitesmoke;
   height: 40px;
   padding: 8px 0px 0px 10px;
@@ -160,21 +165,21 @@ main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea {
   font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.363);
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::-moz-placeholder {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::-moz-placeholder {
   color: rgba(0, 0, 0, 0.349);
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea:-ms-input-placeholder {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.349);
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::placeholder {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::placeholder {
   color: rgba(0, 0, 0, 0.349);
 }
-main section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button {
   border: none;
   outline: none;
   background-color: transparent !important;
 }
-main section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button i {
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button i {
   padding-right: 5px;
   font-size: 16px;
   color: rgba(27, 20, 20, 0.644) !important;
@@ -185,11 +190,8 @@ body main {
   justify-content: space-between;
   align-items: center;
 }
-body main section.chat-ui {
-  background-color: whitesmoke;
-}
 body main section.available-chat {
-  width: 50%;
+  width: 30%;
   padding-top: 20px;
 }
 body main section.available-chat header div.queried-profile {
@@ -323,33 +325,34 @@ body main section.available-chat div.available-chats div.chat div.flags p.read-f
   color: green;
   font-size: 13px;
 }
-body main section.available-chat.view {
-  width: 33%;
-}
 
-main section.user-profile {
+main section.user-profile-and-chat-pannel {
   position: relative;
-  left: 100%;
 }
-main section.user-profile header .cross {
+main section.user-profile-and-chat-pannel section.user-profile {
+  position: absolute;
+  left: 100%;
+  width: 50%;
+}
+main section.user-profile-and-chat-pannel section.user-profile header .cross {
   margin-left: 10px;
   cursor: pointer;
 }
-main section.user-profile header .cross .first {
+main section.user-profile-and-chat-pannel section.user-profile header .cross .first {
   width: 25px;
   height: 3px;
   background-color: rgba(0, 0, 0, 0.199);
   margin-top: 7px;
   transform: rotate(47deg) translate(14px, 5px);
 }
-main section.user-profile header .cross .second {
+main section.user-profile-and-chat-pannel section.user-profile header .cross .second {
   width: 25px;
   height: 3px;
   margin-top: 7px;
   background-color: rgba(0, 0, 0, 0.199);
   transform: rotate(-45deg) translate(2px, 7px);
 }
-main section.user-profile header div.query-profile {
+main section.user-profile-and-chat-pannel section.user-profile header div.query-profile {
   width: 90%;
   margin-left: 5%;
   background-color: white;
@@ -357,13 +360,13 @@ main section.user-profile header div.query-profile {
   padding: 10px;
   margin-top: 25px;
 }
-main section.user-profile header div.query-profile span {
+main section.user-profile-and-chat-pannel section.user-profile header div.query-profile span {
   margin-left: 2px;
 }
-main section.user-profile header div.query-profile span i {
+main section.user-profile-and-chat-pannel section.user-profile header div.query-profile span i {
   color: rgba(0, 0, 0, 0.199);
 }
-main section.user-profile header div.query-profile input[type=search] {
+main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search] {
   background-color: transparent;
   border: none;
   outline: none;
@@ -373,108 +376,108 @@ main section.user-profile header div.query-profile input[type=search] {
   font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.363);
 }
-main section.user-profile header div.query-profile input[type=search]::-moz-placeholder {
+main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search]::-moz-placeholder {
   color: rgba(0, 0, 0, 0.349);
 }
-main section.user-profile header div.query-profile input[type=search]:-ms-input-placeholder {
+main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search]:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.349);
 }
-main section.user-profile header div.query-profile input[type=search]::placeholder {
+main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search]::placeholder {
   color: rgba(0, 0, 0, 0.349);
 }
-main section.user-profile header div.user-profile div.central-image {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.central-image {
   width: 30%;
   margin-left: 30%;
 }
-main section.user-profile header div.user-profile div.central-image div.display-photo {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.central-image div.display-photo {
   padding: 20px 0px 0px 10px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-main section.user-profile header div.user-profile div.central-image div.display-photo img {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.central-image div.display-photo img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-main section.user-profile header div.user-profile div.username-and-description {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.username-and-description {
   width: 40%;
   margin-left: 25%;
   padding: 15px 0px 10px 0px;
 }
-main section.user-profile header div.user-profile div.username-and-description h1.username {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.username-and-description h1.username {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: black;
 }
-main section.user-profile header div.user-profile div.username-and-description p.user-description {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.username-and-description p.user-description {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: black;
   padding: 0px 0px 0px 20px;
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 40%;
   margin-left: 30%;
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon {
   width: 40%;
   border-right: 1px solid;
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon .icon {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon .icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: rgba(0, 0, 255, 0.164);
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon .icon i {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon .icon i {
   padding: 15px;
   color: rgba(0, 0, 255, 0.842);
   font-size: 20px;
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon p.chat {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon p.chat {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: black;
   padding: 5px 0px 0px 10px;
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon {
   width: 40%;
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon .icon {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon .icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: rgba(0, 0, 255, 0.164);
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon .icon i {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon .icon i {
   padding: 15px;
   color: rgba(0, 0, 255, 0.842);
   font-size: 20px;
 }
-main section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon p.vidcall {
+main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon p.vidcall {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: black;
   padding: 5px 0px 0px 0px;
 }
-main section.user-profile .friends-and-favorites {
+main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites {
   padding-left: 40px;
 }
-main section.user-profile .friends-and-favorites .friends, main section.user-profile .friends-and-favorites .favorites {
+main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .friends, main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .favorites {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: black;
   font-size: 14px;
   padding-top: 10px;
 }
-main section.user-profile .friends-and-favorites .friends span, main section.user-profile .friends-and-favorites .favorites span {
+main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .friends span, main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .favorites span {
   margin-left: 10px;
 }
-main section.user-profile .media-links-docs button.view-all {
+main section.user-profile-and-chat-pannel section.user-profile .media-links-docs button.view-all {
   border-radius: 50px;
   border: 1px solid rgb(28, 128, 241);
   padding: 5px;
@@ -483,27 +486,27 @@ main section.user-profile .media-links-docs button.view-all {
   margin-left: 45%;
   margin-top: 15px;
 }
-main section.user-profile .media-links-docs h3 {
+main section.user-profile-and-chat-pannel section.user-profile .media-links-docs h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: black;
   padding: 15px 0px 15px 40px;
 }
-main section.user-profile .media-links-docs .attachments {
+main section.user-profile-and-chat-pannel section.user-profile .media-links-docs .attachments {
   display: flex;
   align-items: center;
   width: 80%;
   margin-left: 10%;
   gap: 10px;
 }
-main section.user-profile .media-links-docs .attachments .attachment {
+main section.user-profile-and-chat-pannel section.user-profile .media-links-docs .attachments .attachment {
   width: 20%;
   background-color: rgba(0, 0, 255, 0.164);
   padding: 20px 10px 20px 10px;
   border-radius: 10px;
   cursor: pointer;
 }
-main section.user-profile .media-links-docs .attachments .attachment span {
+main section.user-profile-and-chat-pannel section.user-profile .media-links-docs .attachments .attachment span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: rgb(28, 128, 241);
@@ -511,6 +514,485 @@ main section.user-profile .media-links-docs .attachments .attachment span {
   width: 20%;
   margin-left: 30%;
 }
-main section.user-profile.view {
-  left: 0%;
+main section.user-profile-and-chat-pannel section.user-profile.view {
+  left: 50%;
+}
+
+@media (max-width: 500px) {
+  body main {
+    display: block;
+  }
+  body main section.available-chat {
+    width: 80% !important;
+    margin-left: 10%;
+    padding-top: 20px;
+  }
+  body main section.available-chat header div.queried-profile {
+    width: 90%;
+    margin-left: 5%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+  }
+  body main section.available-chat header div.queried-profile div.searched-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  body main section.available-chat header div.queried-profile div.searched-profile div.display-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  body main section.available-chat header div.queried-profile div.searched-profile div.display-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description .username, body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message header div.queried-profile div.searched-profile div.username-and-description p.last-message {
+    color: rgb(28, 128, 241);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description p.user-description {
+    color: rgb(83, 81, 81);
+  }
+  body main section.available-chat header div.queried-profile span.edit {
+    padding-right: 5px;
+  }
+  body main section.available-chat header div.queried-profile span.edit i {
+    color: rgba(0, 0, 0, 0.342);
+  }
+  body main section.available-chat header div.query-profile {
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  body main section.available-chat header div.query-profile span {
+    margin-left: 2px;
+  }
+  body main section.available-chat header div.query-profile span i {
+    color: rgba(0, 0, 0, 0.199);
+  }
+  body main section.available-chat header div.query-profile input[type=search] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.363);
+  }
+  body main section.available-chat header div.query-profile input[type=search]::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  body main section.available-chat header div.query-profile input[type=search]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  body main section.available-chat header div.query-profile input[type=search]::placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  body main section.available-chat div.available-chats div.chat {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin-left: 2.5%;
+    padding-top: 10px;
+  }
+  body main section.available-chat div.available-chats div.chat div.chat-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+  }
+  body main section.available-chat div.available-chats div.chat div.chat-profile div.display-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  body main section.available-chat div.available-chats div.chat div.chat-profile div.display-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message .username, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message header div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description div.available-chats div.chat div.chat-profile div.username-and-last-message p.user-description, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message {
+    color: rgb(28, 128, 241);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message {
+    color: rgb(83, 81, 81);
+    font-size: 14px;
+  }
+  body main section.available-chat div.available-chats div.chat div.flags {
+    width: 20%;
+    position: relative;
+  }
+  body main section.available-chat div.available-chats div.chat div.flags p.time-flag {
+    position: relative;
+    right: 1px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.493);
+  }
+  body main section.available-chat div.available-chats div.chat div.flags p.message-flag {
+    position: absolute;
+    right: 35px;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(28, 128, 241);
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+    padding: 1px 0px 0px 3px;
+  }
+  body main section.available-chat div.available-chats div.chat div.flags p.read-flag {
+    position: absolute;
+    right: 35px;
+  }
+  body main section.available-chat div.available-chats div.chat div.flags p.read-flag i {
+    color: green;
+    font-size: 13px;
+  }
+  main section.user-profile-and-chat-pannel {
+    width: 70%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel {
+    background-color: white;
+    width: 100%;
+    top: 100%;
+    display: none;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin-left: 1%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile div.display-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile div.display-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile p.username, body main section.user-profile-and-chat-pannel section.chat-pannel section.available-chat header .current-chat div.user-profile div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.available-chat section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.user-profile-and-chat-pannel section.chat-pannel section.available-chat header div.queried-profile div.searched-profile div.username-and-description .current-chat div.user-profile p.user-description, body main section.available-chat section.user-profile-and-chat-pannel section.chat-pannel header div.queried-profile div.searched-profile div.username-and-description .current-chat div.user-profile p.user-description, body main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile p.last-message {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: black;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile p.online-flag {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.likes-notification button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.likes-notification button i {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.342);
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message .dp, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message .dp, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message .dp {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp img, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message .dp img, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message .dp img, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message .dp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender {
+    float: right;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
+    display: flex;
+    align-items: flex-end;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message div.double-messages p.message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message div.double-messages p.message {
+    background-color: rgb(28, 128, 241);
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer button.send {
+    border: none;
+    outline: none;
+    background-color: rgb(28, 128, 241);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 5px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78%;
+    margin-left: 2%;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm button.voicemail {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgba(27, 20, 20, 0.644);
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea {
+    background-color: whitesmoke;
+    height: 40px;
+    padding: 8px 0px 0px 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+    margin-left: 3px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.363);
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button {
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+  }
+  main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button i {
+    padding-right: 5px;
+    font-size: 16px;
+    color: rgba(27, 20, 20, 0.644) !important;
+  }
+  main section.user-profile-and-chat-pannel {
+    position: relative;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile {
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    display: none;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header .cross {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header .cross .first {
+    width: 25px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.199);
+    margin-top: 7px;
+    transform: rotate(47deg) translate(14px, 5px);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header .cross .second {
+    width: 25px;
+    height: 3px;
+    margin-top: 7px;
+    background-color: rgba(0, 0, 0, 0.199);
+    transform: rotate(-45deg) translate(2px, 7px);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.query-profile {
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 25px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.query-profile span {
+    margin-left: 2px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.query-profile span i {
+    color: rgba(0, 0, 0, 0.199);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-left: 2%;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.363);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search]::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search]:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.query-profile input[type=search]::placeholder {
+    color: rgba(0, 0, 0, 0.349);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.central-image {
+    width: 30%;
+    margin-left: 30%;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.central-image div.display-photo {
+    padding: 20px 0px 0px 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.central-image div.display-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.username-and-description {
+    width: 40%;
+    margin-left: 25%;
+    padding: 15px 0px 10px 0px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.username-and-description h1.username {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: black;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.username-and-description p.user-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: black;
+    padding: 0px 0px 0px 20px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-left: 30%;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon {
+    width: 40%;
+    border-right: 1px solid;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.164);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon .icon i {
+    padding: 15px;
+    color: rgba(0, 0, 255, 0.842);
+    font-size: 20px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon p.chat {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: black;
+    padding: 5px 0px 0px 10px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon {
+    width: 40%;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.164);
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon .icon i {
+    padding: 15px;
+    color: rgba(0, 0, 255, 0.842);
+    font-size: 20px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon p.vidcall {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: black;
+    padding: 5px 0px 0px 0px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites {
+    padding-left: 40px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .friends, main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .favorites {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .friends span, main section.user-profile-and-chat-pannel section.user-profile .friends-and-favorites .favorites span {
+    margin-left: 10px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .media-links-docs button.view-all {
+    border-radius: 50px;
+    border: 1px solid rgb(28, 128, 241);
+    padding: 5px;
+    color: rgb(28, 128, 241);
+    background-color: white;
+    margin-left: 45%;
+    margin-top: 15px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .media-links-docs h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: black;
+    padding: 15px 0px 15px 40px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .media-links-docs .attachments {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    gap: 10px;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .media-links-docs .attachments .attachment {
+    width: 20%;
+    background-color: rgba(0, 0, 255, 0.164);
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile .media-links-docs .attachments .attachment span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: rgb(28, 128, 241);
+    font-size: 13px;
+    width: 20%;
+    margin-left: 30%;
+  }
+  main section.user-profile-and-chat-pannel section.user-profile.view {
+    left: 0%;
+  }
 }/*# sourceMappingURL=style.css.map */
