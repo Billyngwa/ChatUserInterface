@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-button{
+button, .chat{
     cursor: pointer;
 }
 body{
@@ -29,3 +29,4 @@ p.receivers-message{
     margin-top: 2px;
     margin-bottom: 2px;
 }
+

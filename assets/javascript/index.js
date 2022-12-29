@@ -5,6 +5,7 @@ messageFlag.forEach(flag =>{
     }
 });
 
+
 const cross = document.querySelector('.cross');
 let chatPannel = document.querySelector('.chat-pannel');
 let displayProfile = document.querySelector('div#display-profile');
@@ -21,4 +22,10 @@ cross.addEventListener('click', event=>{
     userProfile.classList.remove('view');
     availableContact.classList.remove('view');
     chatPannel.classList.remove('view');
+});
+let chats = document.querySelectorAll('.chat');
+chats.forEach(chat =>{
+    chat.addEventListener('click',event =>{
+        chatPannel.style.top =`${'100%'}`;
+    });
 });
