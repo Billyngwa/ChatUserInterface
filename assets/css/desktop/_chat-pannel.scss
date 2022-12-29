@@ -3,6 +3,11 @@ main{
         background-color: white;
         margin-left: 1%;
         width: 70%;
+
+        
+        &.view{
+            width:33%;
+        }
         header{
             .current-chat{
                 @include display-element-flex(center,space-between);
@@ -61,17 +66,6 @@ main{
                                 border-radius: 50%;
                             }
                         }
-                        p.message{
-                            font-family: $font-family;
-                            font-weight: 400;
-                            color: black;
-                            background-color: whitesmoke;
-                            padding: 7px;
-                            border-radius: 10px;
-                            margin-top: 2px;
-                            margin-bottom: 2px;
-                            background-color: white;
-                        }
                     }
                 }
                 .sender{
@@ -90,23 +84,19 @@ main{
             }
             div.todays-chat{
                 @extend .old-chat;
-                .receiver{
-                    .dp-and-message{
-                        p.message{
-                            color: black;
-                        }
-                    }
-                }
-                div.sender{
-                    .dp-and-message{
-                        p.message{
-                            background-color: $blue-color;
-                            color: black;
-                        }
-                    }
-                }
             }
             .writer{
+                margin-top: 100px;
+                button.send{
+                    @include input-button-style;
+                    background-color: $blue-color;
+                    color: white;
+                    font-size: 15px;
+                    padding: 5px;
+                    margin-left: 5px;
+                    transform: rotate(45deg);
+                    border-radius: 50%;
+                }
                 @include display-element-flex(center,null);
                 .message-tools{
                     @include display-element-flex(center,space-between);
@@ -127,6 +117,7 @@ main{
                             border-radius: 30px;
                             @include input-button-style;
                             width: 100%;
+                            resize: none;
                             margin-left: 3px;
                             // @include container(90%, 2%);
                             font-size: 16px;
@@ -138,17 +129,19 @@ main{
                             }
                             
                         }
-                        .camera-emoji-doc{
+                    }
+                    .camera-emoji-doc{
                            
-                            button{
-                                @include input-button-style;
-                                background-color: transparent;
-                                i{
-                                    color:rgba(27, 20, 20, 0.644);;
-                                }
+                        button{
+                            @include input-button-style;
+                            background-color: transparent!important;
+                            i{
+                                padding-right: 5px;
+                                font-size: 16px;
+                                color:rgba(27, 20, 20, 0.644)!important;
                             }
-                            
                         }
+                        
                     }
                 }
             }

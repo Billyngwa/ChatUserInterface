@@ -13,10 +13,35 @@ body {
   overflow-x: hidden;
 }
 
+p.senders-message {
+  background-color: rgb(28, 128, 241);
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  margin-top: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+p.receivers-message {
+  background-color: white;
+  color: black;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 main section.chat-pannel {
   background-color: white;
   margin-left: 1%;
   width: 70%;
+}
+main section.chat-pannel.view {
+  width: 33%;
 }
 main section.chat-pannel header .current-chat {
   display: flex;
@@ -76,17 +101,6 @@ main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message .dp im
   height: 100%;
   border-radius: 50%;
 }
-main section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message p.message, main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message p.message, main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message p.message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message p.message {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: black;
-  background-color: whitesmoke;
-  padding: 7px;
-  border-radius: 10px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  background-color: white;
-}
 main section.chat-pannel div.chat-box .old-chat .sender, main section.chat-pannel div.chat-box div.todays-chat .sender {
   float: right;
 }
@@ -97,16 +111,21 @@ main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main se
 main section.chat-pannel div.chat-box .old-chat .sender .dp-and-message div.double-messages p.message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message div.double-messages p.message {
   background-color: rgb(28, 128, 241);
 }
-main section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message p.message, main section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message p.message {
-  color: black;
-}
-main section.chat-pannel div.chat-box div.todays-chat div.sender .dp-and-message p.message {
-  background-color: rgb(28, 128, 241);
-  color: black;
-}
 main section.chat-pannel div.chat-box .writer {
+  margin-top: 100px;
   display: flex;
   align-items: center;
+}
+main section.chat-pannel div.chat-box .writer button.send {
+  border: none;
+  outline: none;
+  background-color: rgb(28, 128, 241);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 5px;
+  transform: rotate(45deg);
+  border-radius: 50%;
 }
 main section.chat-pannel div.chat-box .writer .message-tools {
   display: flex;
@@ -135,6 +154,7 @@ main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea {
   border: none;
   outline: none;
   width: 100%;
+  resize: none;
   margin-left: 3px;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -149,13 +169,15 @@ main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea:-ms
 main section.chat-pannel div.chat-box .writer .message-tools div.vm textarea::placeholder {
   color: rgba(0, 0, 0, 0.349);
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm .camera-emoji-doc button {
+main section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button {
   border: none;
   outline: none;
-  background-color: transparent;
+  background-color: transparent !important;
 }
-main section.chat-pannel div.chat-box .writer .message-tools div.vm .camera-emoji-doc button i {
-  color: rgba(27, 20, 20, 0.644);
+main section.chat-pannel div.chat-box .writer .message-tools .camera-emoji-doc button i {
+  padding-right: 5px;
+  font-size: 16px;
+  color: rgba(27, 20, 20, 0.644) !important;
 }
 
 body main {
@@ -300,6 +322,9 @@ body main section.available-chat div.available-chats div.chat div.flags p.read-f
 body main section.available-chat div.available-chats div.chat div.flags p.read-flag i {
   color: green;
   font-size: 13px;
+}
+body main section.available-chat.view {
+  width: 33%;
 }
 
 main section.user-profile {
@@ -485,4 +510,7 @@ main section.user-profile .media-links-docs .attachments .attachment span {
   font-size: 13px;
   width: 20%;
   margin-left: 30%;
+}
+main section.user-profile.view {
+  left: 0%;
 }/*# sourceMappingURL=style.css.map */
