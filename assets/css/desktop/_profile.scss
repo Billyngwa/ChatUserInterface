@@ -19,7 +19,12 @@ main{
                         transform: rotate(47deg) translate(14px, 5px);
                     }
                     .second{
-                        @extend .first;
+                        width: 25px;
+                        height: 3px;
+                        background-color: rgba(0, 0, 0, 0.199);
+                        margin-top: 7px;
+                        transform: rotate(47deg) translate(14px, 5px);
+                        // @extend .first;
                         transform: rotate(-45deg) translate(2px, 7px);
                     }
                 }
@@ -144,7 +149,15 @@ main{
                     }
                 }
                 .favorites{
-                  @extend .friends;
+                    font-family: $font-family;
+                    font-weight:300;
+                    color: black;
+                    font-size: 14px;
+                    padding-top: 10px;
+                    span{
+                        margin-left: 10px;
+                    }
+                //   @extend .friends;
                 }
             }
             .media-links-docs{

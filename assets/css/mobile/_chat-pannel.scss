@@ -13,6 +13,17 @@ main{
             top: 3px;
         }
         section.chat-pannel{
+             
+            &.view{
+                // @include container(0%,0%);
+                width: 100%;
+                left: 100%;
+             }
+             &.view{
+                section.user-profile{
+                    left:60%;
+                }
+             }
             header{
                 .current-chat{
                     @include display-element-flex(center,space-between);
