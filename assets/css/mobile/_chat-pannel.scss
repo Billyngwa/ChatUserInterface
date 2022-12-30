@@ -1,17 +1,18 @@
 main{
+    position: relative;
     section.user-profile-and-chat-pannel{
         // @include display-element-flex(center,space-between);
         width: 70%;
-        section.chat-pannel{
-            background-color: white;
-            // margin-left: 1%;
-            // width: %;
+        background-color: white;
+        right: 100%;
+        transition: 0.5s;
+        &.display-mobile{
+            position: absolute;
+            left:0%;
             width: 100%;
-            top: 100%;
-            display: none;
-            // &.view{
-            //     width:50%;
-            // }
+            top: 3px;
+        }
+        section.chat-pannel{
             header{
                 .current-chat{
                     @include display-element-flex(center,space-between);

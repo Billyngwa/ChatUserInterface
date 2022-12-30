@@ -400,7 +400,7 @@ main section.user-profile-and-chat-pannel section.user-profile {
   left: 100%;
   width: 40%;
   top: 1%;
-  transition: 1.5s;
+  transition: 0.5s;
 }
 main section.user-profile-and-chat-pannel section.user-profile header .cross {
   margin-left: 10px;
@@ -638,14 +638,20 @@ main section.user-profile-and-chat-pannel section.user-profile.view {
     font-size: 14px;
     font-weight: 300;
   }
+  main {
+    position: relative;
+  }
   main section.user-profile-and-chat-pannel {
     width: 70%;
-  }
-  main section.user-profile-and-chat-pannel section.chat-pannel {
     background-color: white;
+    right: 100%;
+    transition: 0.5s;
+  }
+  main section.user-profile-and-chat-pannel.display-mobile {
+    position: absolute;
+    left: 0%;
     width: 100%;
-    top: 100%;
-    display: none;
+    top: 3px;
   }
   main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat {
     display: flex;

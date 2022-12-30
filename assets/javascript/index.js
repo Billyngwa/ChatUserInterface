@@ -12,6 +12,7 @@ let chatPannel = document.querySelector('.chat-pannel');
 let displayProfile = document.querySelector('div#display-profile');
 let userProfile = document.querySelector('section.user-profile');
 let availableContact = document.querySelector('.available-chat');
+let mobileChat = document.querySelector('section.user-profile-and-chat-pannel');
 displayProfile.addEventListener('click', event => {
     chatPannel.classList.add('view');
     // chatPannel.classList.remove('chat-pannel');
@@ -24,9 +25,13 @@ cross.addEventListener('click', event=>{
     availableContact.classList.remove('view');
     chatPannel.classList.remove('view');
 });
-let chats = document.querySelectorAll('.chat');
+let chats = document.querySelectorAll('.chat-profile-mobile');
+// let textAreaElement = document.getElementsById('sender-message').autofocus;
 chats.forEach(chat =>{
     chat.addEventListener('click',event =>{
-        // chatPannel.style.top =`${'100%'}`;
+        mobileChat.classList.toggle('display-mobile');
+        // mainElement.classList.add('display-mobile');
     });
 });
+
+// textAreaElement.autofocus = true;
