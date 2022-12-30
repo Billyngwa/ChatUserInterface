@@ -1,13 +1,15 @@
 body{
     main{
         @include display-element-flex(center,space-between);
-        // background-color: whitesmoke;
-        // section.chat-ui{
-        //     background-color: $ui-background;
-        // }
+        section.chat-ui{
+            background-color: $ui-background;
+        }
         section.available-chat{
             width: 30%;
-            padding-top: 20px;
+            // background-color: red;
+            margin-top: -90px;
+            // position: relative;
+            // top: 1%;
             header{
                 div.queried-profile{
                     @include container(90%,5%);
@@ -61,7 +63,6 @@ body{
                     input[type="search"]{
                         background-color: transparent;
                         @include input-button-style;
-                        // width: 80%;
                         @include container(80%, 2%);
                         font-size: 16px;
                         font-family: $font-family;

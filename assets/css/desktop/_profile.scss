@@ -1,11 +1,12 @@
 main{
-    // position: relative;
     section.user-profile-and-chat-pannel{
         position: relative;
         section.user-profile{
             position: absolute;
             left: 100%;
-            width: 50%;
+            width: 40%;
+            top:1%;
+            transition:1.5s;
             header{
                 .cross{
                     margin-left: 10px;
@@ -18,10 +19,7 @@ main{
                         transform: rotate(47deg) translate(14px, 5px);
                     }
                     .second{
-                        width: 25px;
-                        height: 3px;
-                        margin-top: 7px;
-                        background-color:rgba(0, 0, 0, 0.199);;
+                        @extend .first;
                         transform: rotate(-45deg) translate(2px, 7px);
                     }
                 }
@@ -93,6 +91,7 @@ main{
                                 height: 50px;
                                 border-radius: 50%;
                                 background-color:  rgba(0, 0, 255, 0.164);
+                                cursor: pointer;
                                 i{
                                     padding: 15px;
                                     color: rgba(0, 0, 255, 0.842);
@@ -109,6 +108,7 @@ main{
                         div.vidcall-icon{
                             width: 40%;
                             .icon{
+                                cursor: pointer;
                                 width: 50px;
                                 height: 50px;
                                 border-radius: 50%;
@@ -179,7 +179,6 @@ main{
                             color: $blue-color;
                             font-size: 13px; 
                             @include container(20%,30%);
-                            // padding: 50px;
                         }
                     }
                 }
@@ -187,7 +186,7 @@ main{
     
             
             &.view{
-                left:50%;
+                left:60%;
             }
         }
     }

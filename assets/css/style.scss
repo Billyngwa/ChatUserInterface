@@ -5,12 +5,12 @@
 @import './desktop/chat-pannel';
 @import './desktop/contacts';
 @import './desktop/profile';
-@media (max-width:750px){
+@media (max-width:900px){
     @import './tablet/chat-pannel';
     @import './tablet/contacts';
     @import './tablet/profile';
 }
-@media (max-width:500px){
+@media (max-width:750px){
     @import './mobile/contacts';
     @import './mobile/chat-pannel';
     @import './mobile/profile';

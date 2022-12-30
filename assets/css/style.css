@@ -11,6 +11,7 @@ button, .chat {
 
 body {
   overflow-x: hidden;
+  background-color: whitesmoke;
 }
 
 p.senders-message {
@@ -25,7 +26,7 @@ p.senders-message {
 }
 
 p.receivers-message {
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   padding: 7px;
   font-family: "Roboto", sans-serif;
@@ -43,10 +44,13 @@ main section.user-profile-and-chat-pannel {
 }
 main section.user-profile-and-chat-pannel section.chat-pannel {
   background-color: white;
-  width: 100%;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 main section.user-profile-and-chat-pannel section.chat-pannel.view {
-  width: 50%;
+  width: 56%;
+  margin-left: 2%;
 }
 main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat {
   display: flex;
@@ -54,6 +58,8 @@ main section.user-profile-and-chat-pannel section.chat-pannel header .current-ch
   align-items: center;
   width: 98%;
   margin-left: 1%;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px solid rgba(56, 52, 52, 0.178);
 }
 main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.user-profile {
   display: flex;
@@ -86,10 +92,38 @@ main section.user-profile-and-chat-pannel section.chat-pannel header .current-ch
   border: none;
   outline: none;
   background-color: transparent;
+  margin-right: 10px;
 }
 main section.user-profile-and-chat-pannel section.chat-pannel header .current-chat div.likes-notification button i {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.342);
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .yesterday, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .yesterday {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.342);
+  text-align: center;
+  position: relative;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .yesterday::before, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .yesterday::before, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .yesterday::after, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .yesterday::after {
+  content: " ";
+  position: absolute;
+  width: 38%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.192);
+  display: block;
+  top: 10px;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .yesterday::before, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .yesterday::before {
+  left: 0px;
+  margin-left: 1%;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .yesterday::after, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .yesterday::after {
+  right: 0px;
+  margin-right: 1%;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender {
+  margin: 20px 0px 0px 0px;
 }
 main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message {
   display: flex;
@@ -116,8 +150,34 @@ main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-
 main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender .dp-and-message div.double-messages p.message, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender .dp-and-message div.double-messages p.message {
   background-color: rgb(28, 128, 241);
 }
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .today {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.342);
+  text-align: center;
+  position: relative;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .today::before, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .today::after {
+  content: " ";
+  position: absolute;
+  width: 38%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.192);
+  display: block;
+  top: 10px;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .today::before {
+  left: 0px;
+  margin-left: 1%;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .today::after {
+  right: 0px;
+  margin-right: 1%;
+}
 main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .writer {
+  border-top: 1px solid rgba(0, 0, 0, 0.342);
   margin-top: 100px;
+  padding-top: 25px;
   display: flex;
   align-items: center;
 }
@@ -190,9 +250,12 @@ body main {
   justify-content: space-between;
   align-items: center;
 }
+body main section.chat-ui {
+  background-color: whitesmoke;
+}
 body main section.available-chat {
   width: 30%;
-  padding-top: 20px;
+  margin-top: -90px;
 }
 body main section.available-chat header div.queried-profile {
   width: 90%;
@@ -332,13 +395,15 @@ main section.user-profile-and-chat-pannel {
 main section.user-profile-and-chat-pannel section.user-profile {
   position: absolute;
   left: 100%;
-  width: 50%;
+  width: 40%;
+  top: 1%;
+  transition: 1.5s;
 }
 main section.user-profile-and-chat-pannel section.user-profile header .cross {
   margin-left: 10px;
   cursor: pointer;
 }
-main section.user-profile-and-chat-pannel section.user-profile header .cross .first {
+main section.user-profile-and-chat-pannel section.user-profile header .cross .first, main section.user-profile-and-chat-pannel section.user-profile header .cross .second {
   width: 25px;
   height: 3px;
   background-color: rgba(0, 0, 0, 0.199);
@@ -346,10 +411,6 @@ main section.user-profile-and-chat-pannel section.user-profile header .cross .fi
   transform: rotate(47deg) translate(14px, 5px);
 }
 main section.user-profile-and-chat-pannel section.user-profile header .cross .second {
-  width: 25px;
-  height: 3px;
-  margin-top: 7px;
-  background-color: rgba(0, 0, 0, 0.199);
   transform: rotate(-45deg) translate(2px, 7px);
 }
 main section.user-profile-and-chat-pannel section.user-profile header div.query-profile {
@@ -432,6 +493,7 @@ main section.user-profile-and-chat-pannel section.user-profile header div.user-p
   height: 50px;
   border-radius: 50%;
   background-color: rgba(0, 0, 255, 0.164);
+  cursor: pointer;
 }
 main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.chat-icon .icon i {
   padding: 15px;
@@ -448,6 +510,7 @@ main section.user-profile-and-chat-pannel section.user-profile header div.user-p
   width: 40%;
 }
 main section.user-profile-and-chat-pannel section.user-profile header div.user-profile div.vidcall-and-chat div.vidcall-icon .icon {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -515,148 +578,56 @@ main section.user-profile-and-chat-pannel section.user-profile .media-links-docs
   margin-left: 30%;
 }
 main section.user-profile-and-chat-pannel section.user-profile.view {
-  left: 50%;
+  left: 60%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   body main {
     display: block;
   }
   body main section.available-chat {
-    width: 80% !important;
-    margin-left: 10%;
+    width: 95% !important;
+    margin-left: 2.5%;
     padding-top: 20px;
-  }
-  body main section.available-chat header div.queried-profile {
-    width: 90%;
-    margin-left: 5%;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 0px;
   }
   body main section.available-chat header div.queried-profile div.searched-profile {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  body main section.available-chat header div.queried-profile div.searched-profile div.display-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  body main section.available-chat header div.queried-profile div.searched-profile div.display-photo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    gap: 10px;
   }
   body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description .username, body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message header div.queried-profile div.searched-profile div.username-and-description p.last-message {
-    color: rgb(28, 128, 241);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-size: 18px;
   }
   body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description p.user-description {
-    color: rgb(83, 81, 81);
+    font-weight: 300;
+    font-size: 15px;
   }
   body main section.available-chat header div.queried-profile span.edit {
-    padding-right: 5px;
+    padding: 10px 5px 0px 0px;
   }
   body main section.available-chat header div.queried-profile span.edit i {
     color: rgba(0, 0, 0, 0.342);
   }
   body main section.available-chat header div.query-profile {
-    width: 90%;
-    margin-left: 5%;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  body main section.available-chat header div.query-profile span {
-    margin-left: 2px;
-  }
-  body main section.available-chat header div.query-profile span i {
-    color: rgba(0, 0, 0, 0.199);
-  }
-  body main section.available-chat header div.query-profile input[type=search] {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 80%;
-    margin-left: 2%;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    color: rgba(0, 0, 0, 0.363);
-  }
-  body main section.available-chat header div.query-profile input[type=search]::-moz-placeholder {
-    color: rgba(0, 0, 0, 0.349);
-  }
-  body main section.available-chat header div.query-profile input[type=search]:-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.349);
-  }
-  body main section.available-chat header div.query-profile input[type=search]::placeholder {
-    color: rgba(0, 0, 0, 0.349);
+    padding: 7px;
+    margin-top: 20px;
   }
   body main section.available-chat div.available-chats div.chat {
-    display: flex;
-    align-items: center;
     width: 95%;
     margin-left: 2.5%;
-    padding-top: 10px;
+    padding-top: 20px;
   }
   body main section.available-chat div.available-chats div.chat div.chat-profile {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
     width: 80%;
   }
-  body main section.available-chat div.available-chats div.chat div.chat-profile div.display-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  body main section.available-chat div.available-chats div.chat div.chat-profile div.display-photo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
   body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message .username, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message header div.queried-profile div.searched-profile div.username-and-description p.user-description, body main section.available-chat header div.queried-profile div.searched-profile div.username-and-description div.available-chats div.chat div.chat-profile div.username-and-last-message p.user-description, body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message {
-    color: rgb(28, 128, 241);
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
   }
   body main section.available-chat div.available-chats div.chat div.chat-profile div.username-and-last-message p.last-message {
     color: rgb(83, 81, 81);
     font-size: 14px;
-  }
-  body main section.available-chat div.available-chats div.chat div.flags {
-    width: 20%;
-    position: relative;
-  }
-  body main section.available-chat div.available-chats div.chat div.flags p.time-flag {
-    position: relative;
-    right: 1px;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.493);
-  }
-  body main section.available-chat div.available-chats div.chat div.flags p.message-flag {
-    position: absolute;
-    right: 35px;
-    width: 13px;
-    height: 13px;
-    background-color: rgb(28, 128, 241);
-    border-radius: 50%;
-    font-size: 10px;
-    color: white;
-    padding: 1px 0px 0px 3px;
-  }
-  body main section.available-chat div.available-chats div.chat div.flags p.read-flag {
-    position: absolute;
-    right: 35px;
-  }
-  body main section.available-chat div.available-chats div.chat div.flags p.read-flag i {
-    color: green;
-    font-size: 13px;
+    font-weight: 300;
   }
   main section.user-profile-and-chat-pannel {
     width: 70%;
@@ -816,7 +787,7 @@ main section.user-profile-and-chat-pannel section.user-profile.view {
     margin-left: 10px;
     cursor: pointer;
   }
-  main section.user-profile-and-chat-pannel section.user-profile header .cross .first {
+  main section.user-profile-and-chat-pannel section.user-profile header .cross .first, main section.user-profile-and-chat-pannel section.user-profile header .cross .second {
     width: 25px;
     height: 3px;
     background-color: rgba(0, 0, 0, 0.199);

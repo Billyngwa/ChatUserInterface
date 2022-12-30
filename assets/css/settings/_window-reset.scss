@@ -8,6 +8,7 @@ button, .chat{
 }
 body{
     overflow-x: hidden;
+    background-color: $ui-background;
 }
 p.senders-message{
     background-color: $blue-color;
@@ -20,7 +21,7 @@ p.senders-message{
     margin-bottom: 2px;
 }
 p.receivers-message{
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     padding: 7px;
     font-family: $font-family;

@@ -4,6 +4,7 @@ messageFlag.forEach(flag =>{
         flag.style.display = 'none';
     }
 });
+const 
 
 
 const cross = document.querySelector('.cross');

@@ -1,20 +1,25 @@
 main{
+    
     section.user-profile-and-chat-pannel{
         @include display-element-flex(center,space-between);
         width: 70%;
         section.chat-pannel{
             background-color: white;
+            // padding: 0px 0px 40px 0px;
             // margin-left: 1%;
             // width: %;
-            width: 100%;
+           @include container(95%,2.5%);
+           margin-right: 2.5%;
             
             &.view{
-                width:50%;
+               @include container(56%,2%);
             }
             header{
                 .current-chat{
                     @include display-element-flex(center,space-between);
                     @include container(98%,1%);
+                    padding:10px 0px 10px 0px;
+                    border-bottom: 1px solid rgba(56, 52, 52, 0.178);
                     div.user-profile{
                         @include display-element-flex(center,null); 
                         gap: 10px;
@@ -45,6 +50,7 @@ main{
                         button{
                             @include input-button-style;
                             background-color: transparent;
+                            margin-right: 10px;
                             i{
                                 font-size: 20px;
                                 color: rgba(0, 0, 0, 0.342);
@@ -55,7 +61,11 @@ main{
             }
             div.chat-box{
                 .old-chat{
+                    .yesterday{
+                        @include yester-today;
+                    }
                     .receiver{
+                        margin: 20px 0px 0px 0px;
                         .dp-and-message{
                             @include display-element-flex(flex-start,null);
                             flex-direction: column;
@@ -87,9 +97,14 @@ main{
                 }
                 div.todays-chat{
                     @extend .old-chat;
+                    .today{
+                        @include yester-today;
+                    }
                 }
                 .writer{
+                    border-top: 1px solid rgba(0, 0, 0, 0.342);;
                     margin-top: 100px;
+                    padding-top: 25px;
                     button.send{
                         @include input-button-style;
                         background-color: $blue-color;

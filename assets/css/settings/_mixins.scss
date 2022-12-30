@@ -11,3 +11,27 @@
     border: none;
     outline: none;
 }
+@mixin yester-today{
+    font-family: $font-family;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.342);;
+    text-align: center;
+    position: relative;
+    &::before,&::after{
+        content: " ";
+        position: absolute;
+        width:38%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.192);;
+        display: block;
+        top: 10px;
+    }
+    &::before{
+        left: 0px;
+        margin-left:1% ;
+    }
+    &::after{
+        right: 0px;
+        margin-right:1% ;
+    }
+}
