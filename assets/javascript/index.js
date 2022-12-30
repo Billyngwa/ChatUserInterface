@@ -4,7 +4,7 @@ messageFlag.forEach(flag =>{
         flag.style.display = 'none';
     }
 });
-const 
+ 
 
 
 const cross = document.querySelector('.cross');
@@ -27,6 +27,6 @@ cross.addEventListener('click', event=>{
 let chats = document.querySelectorAll('.chat');
 chats.forEach(chat =>{
     chat.addEventListener('click',event =>{
-        chatPannel.style.top =`${'100%'}`;
+        // chatPannel.style.top =`${'100%'}`;
     });
 });
