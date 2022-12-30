@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+@-webkit-keyframes cursor-pointer {
+  0% {
+    left: 10%;
+    top: -20px;
+  }
+  10% {
+    top: -45px;
+  }
+}
+@keyframes cursor-pointer {
+  0% {
+    left: 10%;
+    top: -20px;
+  }
+  10% {
+    top: -45px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -98,6 +116,9 @@ main section.user-profile-and-chat-pannel section.chat-pannel header .current-ch
   font-size: 20px;
   color: rgba(0, 0, 0, 0.342);
 }
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat {
+  position: relative;
+}
 main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .yesterday, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .yesterday {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -121,6 +142,28 @@ main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-
 main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .yesterday::after, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .yesterday::after {
   right: 0px;
   margin-right: 1%;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat div.hand-cursor, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat div.hand-cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 100%;
+  -webkit-animation-name: cursor-pointer;
+          animation-name: cursor-pointer;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
+}
+main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat div.hand-cursor img, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat div.hand-cursor img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .receiver, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .receiver, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box .old-chat .sender, main section.user-profile-and-chat-pannel section.chat-pannel div.chat-box div.todays-chat .sender {
   margin: 20px 0px 0px 0px;

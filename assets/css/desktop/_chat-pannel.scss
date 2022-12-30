@@ -61,8 +61,29 @@ main{
             }
             div.chat-box{
                 .old-chat{
+                    position: relative;
                     .yesterday{
                         @include yester-today;
+                    }
+                    div.hand-cursor{
+                        // opacity: 0;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        position: relative;
+                        right:100% ;
+                        
+                        animation-name: cursor-pointer;
+                        animation-duration: 1.5s;
+                        animation-delay: 0.5s;
+                        animation-timing-function: ease-in;
+                        animation-iteration-count: 4;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
                     }
                     .receiver{
                         margin: 20px 0px 0px 0px;
